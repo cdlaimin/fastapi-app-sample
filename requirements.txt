@@ -1,0 +1,6 @@
+uvicorn
+sqlalchemy
+requests
+pydantic
+requests
+mysqlclient
