@@ -2,5 +2,7 @@ uvicorn
 sqlalchemy
 requests
 pydantic
+aiohttp
+loguru
+fastapi
 requests
-mysqlclient
