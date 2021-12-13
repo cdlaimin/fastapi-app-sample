@@ -1,8 +1,7 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM tiangolo/uvicorn-gunicorn:python3.9
 
-RUN mkdir /proj/
-COPY ./ /proj/
-WORKDIR /proj
+COPY ./ /app/
+WORKDIR /app
 #COPY ./pip.conf /root/.pip/
 RUN pip install --no-cache-dir -r requirements.txt
 CMD ["python", "./main.py"]
